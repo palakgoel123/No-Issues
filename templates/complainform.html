@@ -1,14 +1,13 @@
 {% extends 'basic.html' %}
 {% block css %}
     .container {
-        width: 55.5rem;
-        background-color: #057b8d;
+        width: 40rem;
+        background-color: #00AFC1;
         border-radius: 5px;
-        color: rgb(253, 224, 224);
-        font: arial;
-        padding: 50px;
-        margin-top: 3%;
-        font-size: 20px;
+        color: white;
+        padding: 25px;
+        margin-top: 1%;
+        font-size: 18px;
         box-shadow: 0px 0px 7px 0px black;
         -webkit-box-shadow: 0px 0px 7px 0px black;
         -moz-box-shadow: 0px 0px 7px 0px black;
@@ -20,7 +19,7 @@
         border-radius: 5px;
         background:#052a36;
         color: white;
-        margin-top: 5%;
+        margin-top: 2%;
         margin-left: 5%;
         width: 90%;
         height: 60%;
@@ -37,7 +36,7 @@
        <button type="submit" class="save btn btn-default">Save</button>
    </form>
 </div> -->
-<h2 style = "margin-top : 40px;"><center><b>Write your Complaint<b><center></h2>
+<h2 style = "margin-top : 20px;"><center><b>Write your Complaint<b><center></h2>
 <div class="container">
     <form method="POST" class="post-form">
         {% csrf_token %}
@@ -45,5 +44,6 @@
         <button type="submit" class="save">Save</button>
     </form>
 </div>
+<br><br>
 
 {% endblock %}
